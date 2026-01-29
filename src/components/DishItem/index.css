@@ -1,0 +1,59 @@
+.dish-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
+}
+
+.dish-left {
+  margin-right: 12px;
+}
+
+.veg-indicator {
+  width: 15px;
+  height: 15px;
+  border: 2px solid green;
+  border-radius: 50%;
+}
+
+.veg-indicator.non-veg {
+  border-color: red;
+}
+
+.dish-info {
+  flex: 1;
+}
+
+.price {
+  font-weight: bold;
+  margin: 3px 0;
+}
+
+.counter button {
+  margin: 0 6px;
+  padding: 4px 8px;
+  background: green;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.not-available {
+  color: red;
+  font-weight: bold;
+}
+
+.custom {
+  color: blue;
+}
+
+.calories {
+  color: orange;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.img {
+  width: 60px;
+  border-radius: 6px;
+}
