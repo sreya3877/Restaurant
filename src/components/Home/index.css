@@ -1,45 +1,27 @@
-.home {
-  padding: 10px;
-  font-family: Arial, sans-serif;
-}
-
-.spinner-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.spinner-border {
-  width: 50px;
-  height: 50px;
-  border: 5px solid #ddd;
-  border-top-color: #f15a24;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
+/* Tabs Container */
 .tabs {
   display: flex;
   list-style: none;
-  padding: 0;
+  padding: 8px 16px;
   border-bottom: 2px solid #ccc;
-  margin-bottom: 15px;
+  overflow-x: auto;
+  background: #fff;
 }
 
-.tab-item {
-  padding: 8px 14px;
-  cursor: pointer;
+.tabs button {
+  background: transparent;
+  border: none;
+  font-size: 16px;
   font-weight: bold;
   color: #555;
+  padding: 10px 14px;
+  cursor: pointer;
+  transition:
+    color 0.3s,
+    border-bottom 0.3s;
 }
 
-.tab-item.active {
+.tabs button.active-tab {
   border-bottom: 3px solid #f15a24;
   color: #f15a24;
 }
@@ -47,4 +29,10 @@
 .dishes-list {
   list-style: none;
   padding: 0;
+}
+@media (max-width: 600px) {
+  .tabs button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
 }
